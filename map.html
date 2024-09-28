@@ -220,7 +220,7 @@
       }
 
       .overlay-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         margin-bottom: 1rem;
       }
@@ -268,12 +268,13 @@
 
       .logo {
         width: max-content;
-        font-size: 3rem;
+        height: 5dvh;
+        font-size: 1.5em;
         font-family: var(--font);
         color: var(--gold);
         font-weight: bold;
         position: absolute;
-        bottom: 0.25dvw;
+        top: 0.25dvw;
         right: 0.5rem;
         z-index: 200;
       }
@@ -299,10 +300,10 @@
 
   <body>
     <main>
-      <section class="logo">30 Spots to Celebrate 30 Years!</section>
+      <section class="logo"></section>
 
       <section class="overlay">
-        <div class="overlay-title">Locations</div>
+        <div class="overlay-title">30 Spots for 30 Years</div>
 
         <div class="location" data-value="1">
           <div class="meta">
@@ -672,7 +673,7 @@
       </section>
 
       <section>
-        <div id="map" style="width: 400px; height: 300px"></div>
+        <div id="map" style="width: 100%; height: 100%"></div>
         <script>
           var map = new maplibregl.Map({
             container: "map",
