@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting Card</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+        font-family: "Arial", sans-serif;
+      }
+
+      .card {
+        background-color: #fff;
+        width: 60%;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        position: relative;
+        border: 6px solid transparent;
+        background-clip: padding-box;
+      }
+
+      .header {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+      }
+
+      .message {
+        font-size: 1.5rem;
+        color: #34495e;
+        margin-bottom: 2rem;
+      }
+
+      .signatures {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        margin-top: 3rem;
+      }
+
+      .signature-group {
+        margin-bottom: 1rem;
+      }
+
+      /* Button styling */
+      .back-button {
+        margin-top: 2rem;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        background-color: var(--gold);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .back-button:hover {
+        background-color: #d98811;
+      }
+
+      /* Star ornamentation */
+      .ornament {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .ornament .star {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: var(--gold);
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+
+      .star.top-left {
+        top: -20px;
+        left: -20px;
+      }
+
+      .star.bottom-right {
+        bottom: -20px;
+        right: -20px;
+      }
+
+      .star.bottom-left {
+        bottom: -20px;
+        left: -20px;
+      }
+
+      .star.top-right {
+        top: -20px;
+        right: -20px;
+      }
+
+      .ornament-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 6px solid var(--gold);
+        border-radius: 15px;
+        z-index: -1;
+      }
+
+      /* Custom colors */
+      :root {
+        --gold: #f39c12;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">Congratulations Mom + Dad! 🎉</div>
+      <div class="message">
+        Here's to 30 wonderful years of love, laughter, and togetherness.
+      </div>
+      <div class="message">
+        In honor of your relationship, we've designed a custom map with thirty
+        date ideas in the San Antonio + Austin areas to celebrate! Some of these
+        are places that we've been to, while others are ones that we're hoping
+        you'll check out for us. Let us know what your favorites are!
+      </div>
+      <div class="signatures">
+        <div class="signature-group">
+          With love, <br />Hadyn + Erica | Harry + Amara
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Button linking to index.html -->
+      <a href="index.html" class="back-button">Here we go!</a>
+
+      <!-- Decorative star ornamentation -->
+      <div class="ornament">
+        <div class="star top-left"></div>
+        <div class="star top-right"></div>
+        <div class="star bottom-left"></div>
+        <div class="star bottom-right"></div>
+      </div>
+      <div class="ornament-border"></div>
+    </div>
+  </body>
+</html>

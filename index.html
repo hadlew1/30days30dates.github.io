@@ -182,7 +182,7 @@
       }
 
       :root {
-        --gold: #a88a4e;
+        --gold: #bf9b30;
         --font: "CustomFont", sans-serif;
       }
 
@@ -207,13 +207,13 @@
       }
 
       .overlay {
-        width: 30dvw;
+        width: 20dvw;
         height: 100%;
         position: absolute;
+        left: 0;
         top: 0;
-        right: 0;
         background-color: white;
-        border-left: 2px solid var(--gold);
+        border-right: 2px solid var(--gold);
         z-index: 100;
         padding: 1rem;
         overflow: scroll;
@@ -267,14 +267,14 @@
       }
 
       .logo {
-        width: min-content;
-        font-size: 2rem;
+        width: max-content;
+        font-size: 3rem;
         font-family: var(--font);
         color: var(--gold);
         font-weight: bold;
         position: absolute;
-        top: 0.25rem;
-        left: 0.5rem;
+        bottom: 0.25dvw;
+        right: 0.5rem;
         z-index: 200;
       }
 
@@ -299,7 +299,7 @@
 
   <body>
     <main>
-      <section class="logo">Mom and Dad's Day Out</section>
+      <section class="logo">30 Spots to Celebrate 30 Years!</section>
 
       <section class="overlay">
         <div class="overlay-title">Locations</div>
@@ -308,11 +308,11 @@
           <div class="meta">
             <div class="number">1</div>
             <div class="info">
-              <strong>Orobianco</strong><br />
-              503 Main St, Blanco, TX 78606
+              <strong>FaceTime with Archie, Marmalade, and Toast</strong><br />
+              273 Toucan Drive, Spring Branch, TX
             </div>
           </div>
-          <div class="expand">B</div>
+          <div class="expand">[image of each fur ball]</div>
         </div>
         <div class="location" data-value="2">
           <div class="meta">
@@ -322,257 +322,21 @@
               11355 US-281 N, Spring Branch, TX 78070
             </div>
           </div>
-          <div class="expand">nan</div>
+          <div class="expand">No such thing as too many plants.</div>
         </div>
         <div class="location" data-value="3">
           <div class="meta">
             <div class="number">3</div>
             <div class="info">
-              <strong>Nowhere Books</strong><br />
-              5154 Broadway, San Antonio, TX 78209
+              <strong>Orobianco</strong><br />
+              503 Main St, Blanco, TX 78606
             </div>
           </div>
-          <div class="expand">nan</div>
+          <div class="expand">Worth all of the Lactaid.</div>
         </div>
         <div class="location" data-value="4">
           <div class="meta">
             <div class="number">4</div>
-            <div class="info">
-              <strong>Blue Star Arts Complex</strong><br />
-              1414 S Alamo St, San Antonio, TX
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="5">
-          <div class="meta">
-            <div class="number">5</div>
-            <div class="info">
-              <strong>Afternoon Tea</strong><br />
-              12233 Ranch Rd 620 N #114, Austin, TX 78750, USA
-            </div>
-          </div>
-          <div class="expand">
-            Can’t go wrong with a high tea bruv. Reserve a spot on their website
-          </div>
-        </div>
-        <div class="location" data-value="6">
-          <div class="meta">
-            <div class="number">6</div>
-            <div class="info">
-              <strong
-                >Throwin’ Gold workshop (wheel throwing or metal
-                working?)</strong
-              ><br />
-              10506 Gulfdale St, San Antonio, TX 78216
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="7">
-          <div class="meta">
-            <div class="number">7</div>
-            <div class="info">
-              <strong>FaceTime with Archie</strong><br />
-              1902 N Mozart St
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="8">
-          <div class="meta">
-            <div class="number">8</div>
-            <div class="info">
-              <strong>FaceTime with Marmalade / Toast</strong><br />
-              2126 N120th St
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="9">
-          <div class="meta">
-            <div class="number">9</div>
-            <div class="info">
-              <strong>Taquitos West Ave</strong><br />
-              2818 West Ave, San Antonio, TX 78201
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="10">
-          <div class="meta">
-            <div class="number">10</div>
-            <div class="info">
-              <strong>Cool Crest Mini Golf</strong><br />
-              1402 Fredericksburg Rd, San Antonio, TX 78201
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="11">
-          <div class="meta">
-            <div class="number">11</div>
-            <div class="info">
-              <strong>Pearl Farmers Market</strong><br />
-              312 Pearl Pkwy, San Antonio, TX 78215
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="12">
-          <div class="meta">
-            <div class="number">12</div>
-            <div class="info">
-              <strong>Kayak on Lady Bird Lake?</strong><br />
-              nan
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="13">
-          <div class="meta">
-            <div class="number">13</div>
-            <div class="info">
-              <strong>Pastries at épicerie</strong><br />
-              2307 Hancock Dr, Austin, TX 78756
-            </div>
-          </div>
-          <div class="expand">nan</div>
-        </div>
-        <div class="location" data-value="14">
-          <div class="meta">
-            <div class="number">14</div>
-            <div class="info">
-              <strong>KG BBQ</strong><br />
-              3108 Manor Rd, Austin, TX 78723
-            </div>
-          </div>
-          <div class="expand">
-            Egyptian barbeque - more info HERE. I’ve always wanted to try their
-            pomegranate glaze!
-          </div>
-        </div>
-        <div class="location" data-value="15">
-          <div class="meta">
-            <div class="number">15</div>
-            <div class="info">
-              <strong>Austin Eastciders</strong><br />
-              979 Springdale Rd Ste. 130, Austin, TX 78702
-            </div>
-          </div>
-          <div class="expand">Nice vibe, tasty cider</div>
-        </div>
-        <div class="location" data-value="16">
-          <div class="meta">
-            <div class="number">16</div>
-            <div class="info">
-              <strong>Mozart's Coffee Roasters</strong><br />
-              3825 Lake Austin Blvd, Austin, TX 78703
-            </div>
-          </div>
-          <div class="expand">Coffee with a view!</div>
-        </div>
-        <div class="location" data-value="17">
-          <div class="meta">
-            <div class="number">17</div>
-            <div class="info">
-              <strong>Casey's New Orleans Snowballs</strong><br />
-              808 E 51st St, Austin, TX 78751
-            </div>
-          </div>
-          <div class="expand">We all love snow cones. Nuff said.</div>
-        </div>
-        <div class="location" data-value="18">
-          <div class="meta">
-            <div class="number">18</div>
-            <div class="info">
-              <strong>Cabo Bob’s</strong><br />
-              Multiple locations
-            </div>
-          </div>
-          <div class="expand">
-            WAYYY better than Chipotle, and even better than Freebirds! An
-            Austin staple!
-          </div>
-        </div>
-        <div class="location" data-value="19">
-          <div class="meta">
-            <div class="number">19</div>
-            <div class="info">
-              <strong>Drag Show at Oilcan Harry's</strong><br />
-              211 W 4th St, Austin, TX 78701
-            </div>
-          </div>
-          <div class="expand">
-            Drag shows every night of the week! Karaoke drag??
-          </div>
-        </div>
-        <div class="location" data-value="20">
-          <div class="meta">
-            <div class="number">20</div>
-            <div class="info">
-              <strong>The Roosevelt Room</strong><br />
-              307 W 5th St, Austin, TX 78701
-            </div>
-          </div>
-          <div class="expand">
-            Innovative cocktails, good ambience, great to pair with another
-            event above
-          </div>
-        </div>
-        <div class="location" data-value="21">
-          <div class="meta">
-            <div class="number">21</div>
-            <div class="info">
-              <strong>Jazz, TX</strong><br />
-              312 Pearl Parkway, Building 6, Suite 6001
-            </div>
-          </div>
-          <div class="expand">
-            Dinner and a Jazz show in the Pearl district. Shows basically every
-            night at 7 or 7:30.
-          </div>
-        </div>
-        <div class="location" data-value="22">
-          <div class="meta">
-            <div class="number">22</div>
-            <div class="info">
-              <strong>Hiatus Spa</strong><br />
-              303 Pearl Pkwy. Ste. 114, San Antonio, TX 78215
-            </div>
-          </div>
-          <div class="expand">
-            Relax with a couples massage, facial, or body treatment
-          </div>
-        </div>
-        <div class="location" data-value="23">
-          <div class="meta">
-            <div class="number">23</div>
-            <div class="info">
-              <strong>Peter Pan Mini Golf</strong><br />
-              1207 Barton Springs Rd, Austin, TX 78704
-            </div>
-          </div>
-          <div class="expand">
-            Operating since 1948, this family-owned pair of courses features
-            whales, castles & giant shoes.
-          </div>
-        </div>
-        <div class="location" data-value="24">
-          <div class="meta">
-            <div class="number">24</div>
-            <div class="info">
-              <strong>Kismet Cafe</strong><br />
-              1000 E 41st St Suite 200, Austin, TX 78751
-            </div>
-          </div>
-          <div class="expand">
-            Some of the best med food we’ve had - get the falafel!
-          </div>
-        </div>
-        <div class="location" data-value="25">
-          <div class="meta">
-            <div class="number">25</div>
             <div class="info">
               <strong>Stars and Stripes Drive in Theater</strong><br />
               1178 Kroesche Ln. New Braunfels, TX 78130
@@ -583,22 +347,291 @@
             some Whataburger!
           </div>
         </div>
-        <div class="location" data-value="26">
+        <div class="location" data-value="5">
           <div class="meta">
-            <div class="number">26</div>
+            <div class="number">5</div>
+            <div class="info">
+              <strong
+                >Cheese Tasting or Cheese Making Classes @ River Whey Creamery </strong
+              ><br />
+              17361 Bell North Drive, Suite 115, Schertz, Texas 78154
+            </div>
+          </div>
+          <div class="expand">
+            Beer tasting doesn’t sound fun but cheese tasting does!
+          </div>
+        </div>
+        <div class="location" data-value="6">
+          <div class="meta">
+            <div class="number">6</div>
+            <div class="info">
+              <strong>Throwin’ Gold</strong><br />
+              10506 Gulfdale St, San Antonio, TX 78216
+            </div>
+          </div>
+          <div class="expand">
+            Pottery wheel throwing and metalsmithing classes.
+          </div>
+        </div>
+        <div class="location" data-value="7">
+          <div class="meta">
+            <div class="number">7</div>
+            <div class="info">
+              <strong>World's Largest Cowboy Boots</strong><br />
+              7400 San Pedro Ave, San Antonio, TX 78216
+            </div>
+          </div>
+          <div class="expand">
+            These 40-foot-tall boots by artist Bob Wade were originally built on
+            a vacant lot near the White House in 1979. They were on display for
+            six months before being relocated via flatbed trucks to their
+            current home in front of a mall (of course).
+          </div>
+        </div>
+        <div class="location" data-value="8">
+          <div class="meta">
+            <div class="number">8</div>
+            <div class="info">
+              <strong>Taquitos West Ave</strong><br />
+              2818 West Ave, San Antonio, TX 78201
+            </div>
+          </div>
+          <div class="expand">
+            We regularly reminisce about these tacos. The premiere destination
+            for Taco Tuesday, but also Taco Wednesday, Taco Thursday, Taco
+            Friday...
+          </div>
+        </div>
+        <div class="location" data-value="9">
+          <div class="meta">
+            <div class="number">9</div>
+            <div class="info">
+              <strong>Nowhere Books</strong><br />
+              5154 Broadway, San Antonio, TX 78209
+            </div>
+          </div>
+          <div class="expand">No such thing as too many books, either.</div>
+        </div>
+        <div class="location" data-value="10">
+          <div class="meta">
+            <div class="number">10</div>
+            <div class="info">
+              <strong>Cool Crest Mini Golf</strong><br />
+              1402 Fredericksburg Rd, San Antonio, TX 78201
+            </div>
+          </div>
+          <div class="expand">
+            Get ready to par-tee at this 95-year-old mini golf course founded in
+            1929.
+          </div>
+        </div>
+        <div class="location" data-value="11">
+          <div class="meta">
+            <div class="number">11</div>
+            <div class="info">
+              <strong>Hiatus Spa</strong><br />
+              303 Pearl Pkwy. Ste. 114, San Antonio, TX 78215
+            </div>
+          </div>
+          <div class="expand">
+            Relax with a couples massage, facial, or body treatment.
+          </div>
+        </div>
+        <div class="location" data-value="12">
+          <div class="meta">
+            <div class="number">12</div>
+            <div class="info">
+              <strong>Pearl Farmers Market</strong><br />
+              312 Pearl Pkwy, San Antonio, TX 78215
+            </div>
+          </div>
+          <div class="expand">
+            Please pet all the pups that you see on our behalf :)
+          </div>
+        </div>
+        <div class="location" data-value="13">
+          <div class="meta">
+            <div class="number">13</div>
+            <div class="info">
+              <strong>Jazz, TX</strong><br />
+              312 Pearl Parkway, Building 6, Suite 6001
+            </div>
+          </div>
+          <div class="expand">
+            Dinner and a Jazz show in the Pearl district. Shows basically every
+            night at 7 or 7:30pm.
+          </div>
+        </div>
+        <div class="location" data-value="14">
+          <div class="meta">
+            <div class="number">14</div>
+            <div class="info">
+              <strong>Blue Star Arts Complex</strong><br />
+              1414 S Alamo St, San Antonio, TX
+            </div>
+          </div>
+          <div class="expand">
+            A cool complex with different artist studios, galleries,
+            restaurants, and more. Their First Friday Art Walk is San Antonio's
+            longest-running monthly art event.
+          </div>
+        </div>
+        <div class="location" data-value="15">
+          <div class="meta">
+            <div class="number">15</div>
+            <div class="info">
+              <strong>Mozart's Coffee Roasters</strong><br />
+              3825 Lake Austin Blvd, Austin, TX 78703
+            </div>
+          </div>
+          <div class="expand">Coffee with a view!</div>
+        </div>
+        <div class="location" data-value="16">
+          <div class="meta">
+            <div class="number">16</div>
+            <div class="info">
+              <strong>Zilker Botanical Garden</strong><br />
+              2220 Barton Springs Rd, Austin, TX 78746
+            </div>
+          </div>
+          <div class="expand">
+            Harry and I also went here when we were in our early days. They have
+            cool cactuses!
+          </div>
+        </div>
+        <div class="location" data-value="17">
+          <div class="meta">
+            <div class="number">17</div>
+            <div class="info">
+              <strong>Peter Pan Mini Golf</strong><br />
+              1207 Barton Springs Rd, Austin, TX 78704
+            </div>
+          </div>
+          <div class="expand">
+            Operating since 1948, this family-owned pair of courses features
+            whales, castles & giant shoes.
+          </div>
+        </div>
+        <div class="location" data-value="18">
+          <div class="meta">
+            <div class="number">18</div>
+            <div class="info">
+              <strong>Lady Bird Lake Rentals</strong><br />
+              20 N Interstate Hwy 35 Service Rd, Austin, TX 78701
+            </div>
+          </div>
+          <div class="expand">nan</div>
+        </div>
+        <div class="location" data-value="19">
+          <div class="meta">
+            <div class="number">19</div>
+            <div class="info">
+              <strong>The Roosevelt Room</strong><br />
+              307 W 5th St, Austin, TX 78701
+            </div>
+          </div>
+          <div class="expand">
+            Innovative cocktails, good ambience; great to pair with another
+            event on this list (but maybe not the ice hockey).
+          </div>
+        </div>
+        <div class="location" data-value="20">
+          <div class="meta">
+            <div class="number">20</div>
+            <div class="info">
+              <strong>Drag Show at Oilcan Harry's</strong><br />
+              211 W 4th St, Austin, TX 78701
+            </div>
+          </div>
+          <div class="expand">
+            Drag shows every night of the week! Karaoke drag??
+          </div>
+        </div>
+        <div class="location" data-value="21">
+          <div class="meta">
+            <div class="number">21</div>
             <div class="info">
               <strong>Texas Two Steps lessons at The White Horse</strong><br />
               500 Comal St, Austin, TX 78702
             </div>
           </div>
           <div class="expand">
-            The White Horse hosts donation-based Texas Two-Step lessons on
-            Thursdays, Fridays, and Saturdays at 7:00 PM
+            Yeehaw! The White Horse hosts donation-based Texas Two-Step lessons
+            on Thursdays, Fridays, and Saturdays at 7:00 PM
           </div>
+        </div>
+        <div class="location" data-value="22">
+          <div class="meta">
+            <div class="number">22</div>
+            <div class="info">
+              <strong>Austin Eastciders</strong><br />
+              979 Springdale Rd Ste. 130, Austin, TX 78702
+            </div>
+          </div>
+          <div class="expand">Nice vibe, tasty cider.</div>
+        </div>
+        <div class="location" data-value="23">
+          <div class="meta">
+            <div class="number">23</div>
+            <div class="info">
+              <strong>KG BBQ</strong><br />
+              3108 Manor Rd, Austin, TX 78723
+            </div>
+          </div>
+          <div class="expand">
+            Egyptian barbeque - more info HERE. I’ve always wanted to try their
+            pomegranate glaze!
+          </div>
+        </div>
+        <div class="location" data-value="24">
+          <div class="meta">
+            <div class="number">24</div>
+            <div class="info">
+              <strong>Cabo Bob’s</strong><br />
+              Multiple locations (Cabo Bob's Burritos, 2828 Rio Grande St,
+              Austin, TX 78705)
+            </div>
+          </div>
+          <div class="expand">
+            WAYYY better than Chipotle, and even better than Freebirds! An
+            Austin staple!
+          </div>
+        </div>
+        <div class="location" data-value="25">
+          <div class="meta">
+            <div class="number">25</div>
+            <div class="info">
+              <strong>Kismet Cafe</strong><br />
+              1000 E 41st St Suite 200, Austin, TX 78751
+            </div>
+          </div>
+          <div class="expand">
+            Some of the best med food we’ve had - get the falafel!
+          </div>
+        </div>
+        <div class="location" data-value="26">
+          <div class="meta">
+            <div class="number">26</div>
+            <div class="info">
+              <strong>Casey's New Orleans Snowballs</strong><br />
+              808 E 51st St, Austin, TX 78751
+            </div>
+          </div>
+          <div class="expand">We all love snow cones. 'Nuff said.</div>
         </div>
         <div class="location" data-value="27">
           <div class="meta">
             <div class="number">27</div>
+            <div class="info">
+              <strong>Pastries at épicerie</strong><br />
+              2307 Hancock Dr, Austin, TX 78756
+            </div>
+          </div>
+          <div class="expand">Little treats abound!</div>
+        </div>
+        <div class="location" data-value="28">
+          <div class="meta">
+            <div class="number">28</div>
             <div class="info">
               <strong>Public Skate @ Chaparral Ice</strong><br />
               2525 W Anderson Ln. #400, Austin, TX 78757
@@ -608,25 +641,11 @@
             Partake in the best sport known to man - ice hockey!
           </div>
         </div>
-        <div class="location" data-value="28">
-          <div class="meta">
-            <div class="number">28</div>
-            <div class="info">
-              <strong
-                >Cheese Tasting or Cheese Making Classes @ River Whey Creamery </strong
-              ><br />
-              17361 Bell North Drive, Suite 115 Schertz, Texas 78154
-            </div>
-          </div>
-          <div class="expand">
-            Beer tasting doesn’t sound fun but cheese tasting does!
-          </div>
-        </div>
         <div class="location" data-value="29">
           <div class="meta">
             <div class="number">29</div>
             <div class="info">
-              <strong>Curling 101</strong><br />
+              <strong>Curling 101 with Lone Star Curling Club</strong><br />
               The Pond Hockey Club 9402 United Dr Austin, TX 78758
             </div>
           </div>
@@ -638,13 +657,13 @@
           <div class="meta">
             <div class="number">30</div>
             <div class="info">
-              <strong>Zilker Botanical Garden</strong><br />
-              2220 Barton Springs Rd, Austin, TX 78746
+              <strong>Michelle's Patisserie</strong><br />
+              12233 Ranch Rd 620 N #114, Austin, TX 78750, USA
             </div>
           </div>
           <div class="expand">
-            Harry and I also went here when we were in our early days. They have
-            cool cactuses!
+            Can’t go wrong with a high tea, bruv. Reserve a spot on their
+            website.
           </div>
         </div>
       </section>
@@ -683,8 +702,8 @@
               type: "circle",
               source: "points",
               paint: {
-                "circle-radius": 10,
-                "circle-color": "#A88A4E",
+                "circle-radius": 9,
+                "circle-color": "#bf9b30",
               },
             });
 
@@ -705,7 +724,7 @@
             });
 
             const bounds = map.getBounds();
-            const padding = 0.05;
+            const padding = 55;
             const maxBounds = [
               [bounds.getWest() - padding, bounds.getSouth() - padding],
               [bounds.getEast() + padding, bounds.getNorth() + padding],
@@ -734,8 +753,12 @@
 
                   map.flyTo({
                     center: coordinates,
-                    zoom: 17,
-                    essential: true,
+                    zoom: 11,
+                    // These options control the flight curve, making it move
+                    // slowly and zoom out almost completely before starting
+                    // to pan.
+                    //speed: 0.25, // make the flying slow
+                    essential: false,
                   });
                 }
               });
