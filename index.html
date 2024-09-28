@@ -24,47 +24,48 @@
 
       .card {
         background-color: #fff;
-        width: 60dvw;
-        height: 85dvh;
+        width: 90vw; /* Use vw to make it responsive */
+        max-width: 800px; /* Still keep the maximum width for larger screens */
+        height: auto; /* Let the content define the height */
+        max-height: 90vh; /* Keep within the viewport */
         padding: 2rem;
         text-align: center;
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        max-width: 800px;
         position: relative;
         border: 6px solid transparent;
         background-clip: padding-box;
+        margin: auto; /* Center the card */
+        overflow: hidden; /* Ensure content stays inside */
       }
 
       .header {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: #2c3e50;
         margin-bottom: 1.5rem;
+        word-wrap: break-word; /* Prevents long words from overflowing */
       }
 
       .message {
-        font-size: 1.25rem;
-        width: auto;
-        height: auto;
-
+        font-size: 1.25rem; /* Scale down for mobile */
         color: #34495e;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        word-wrap: break-word; /* Prevent overflow */
       }
 
       .signatures {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #7f8c8d;
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
 
       .signature-group {
         margin-bottom: 1rem;
       }
 
-      /* Button styling */
       .back-button {
         margin-top: 2rem;
-        padding: 0.75rem 2rem;
+        padding: 0.75rem 1.5rem;
         font-size: 1rem;
         background-color: var(--gold);
         color: white;
@@ -72,6 +73,32 @@
         border-radius: 5px;
         cursor: pointer;
         text-decoration: none;
+        display: inline-block;
+      }
+
+      /* Media queries for smaller devices */
+      @media (max-width: 768px) {
+        .card {
+          width: 90vw; /* Adjust card width for mobile */
+          padding: 1.5rem; /* Reduce padding on smaller screens */
+        }
+
+        .header {
+          font-size: 1.75rem; /* Scale font size down for mobile */
+        }
+
+        .message {
+          font-size: 1.15rem;
+        }
+
+        .signatures {
+          font-size: 0.9rem;
+        }
+
+        .back-button {
+          font-size: 0.9rem; /* Adjust button size for mobile */
+          padding: 0.5rem 1rem;
+        }
       }
 
       .back-button:hover {
